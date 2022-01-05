@@ -46,6 +46,7 @@ const starts = async () => {
   client.autoReconnect = ReconnectMode.onConnectionLost;
   client.logger.level = "warn";
   console.log(banner.string);
+  client.version = [2, 2143, 4];
   client.on("qr", () => {
     console.log(
       color("[", "white"),
